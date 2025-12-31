@@ -9,9 +9,6 @@ use Illuminate\Support\Facades\Auth;
 
 class AdminReservationController extends Controller
 {
-    /**
-     * Display a list of all future reservations for admin users.
-     */
     public function index()
     {
         if (Auth::user()->user_types_id !== 1) {
