@@ -10,9 +10,6 @@ use Illuminate\Support\Facades\Gate;
 
 class MyReservationController extends Controller
 {
-    /**
-     * Display a list of the authenticated user's reservations.
-     */
     public function index()
     {
         $reservations = auth()->user()->reservations()
