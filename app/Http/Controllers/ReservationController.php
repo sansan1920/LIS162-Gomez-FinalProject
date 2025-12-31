@@ -10,9 +10,6 @@ use Illuminate\Support\Facades\Auth;
 
 class ReservationController extends Controller
 {
-    /**
-     * Display the dashboard with a full calendar and reservation data.
-     */
     public function index()
     {
         $now = Carbon::now();
